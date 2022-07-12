@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        fieldset, h1{
+            color: rgb(255, 255, 255);
+            margin: auto;
+        }
+        body{
+            background-color: rgb(25, 82, 82);;
+        }
+        fieldset{
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <h1>Formulario</h1>
+        <form action="conexion.php" method="post">
+        <h2>Nombres</h2>
+        <label>
+            <input type="text" name="nombre">
+        </label>
+        <h2>Apellidos</h2>
+        <label>
+            <input type="text" name="apellido">
+        </label>
+        <h2>Genero</h2>
+        <label> Masculino
+            <input type="radio" name="gender" value="Masculino" checked>
+        </label>
+        <label> Femenino
+            <input type="radio" name="gender" value="Femenino">
+        </label>
+        <label> Prefiero no decirlo
+            <input type="radio" name="gender" value="desconocido">
+        </label>
+        <h2>Edad</h2>
+        <label>
+            <input type="number" min="18" max="50" name="edad">
+        </label>
+        <h2>Fecha de nacimiento</h2>
+        <label>
+        <input type="date" name="fechaNacimiento">
+        </label>
+        <h2>Ocupacion</h2>
+        <select name="ocupacion" name="ocupacion">
+            <option value="estudiante">Estudiante</option>
+            <option value="empleado privado">Empleado privado</option>
+            <option value="empleado publico">Empleado publico</option>
+            <option value="emprendedor">Emprendedor</option>
+            <option value="chipero">Chipero</option>
+        </select>
+        <h2>Cedula</h2>
+        <label>
+            <input type="number" name="cedula">
+        </label>
+        <br>
+        <br>
+        <button>Enviar</button>
+        <br>
+        <button>Editar</button>
+        <br>
+        <button>Eliminar</button>
+    </form>
+    </fieldset> 
+</body>
+</html>
